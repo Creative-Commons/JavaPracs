@@ -1,0 +1,19 @@
+
+1. Develop the presentation layer of Library Management software application with suitable menus.
+
+2. Design suitable database for Library Management System.
+
+3. Develop Java application to store image in a database as well as retrieve image from database.
+
+4. Write a Java application to demonstrate servlet life cycle.
+
+5. Design database for student administration. Develop servlet(s) to perform CRUD operations.
+
+6. Create Employees table in EMP database. Perform select, insert, update, and delete operations on Employee table using JSP.
+
+7. Write a Student class with three properties. The useBean action declares a JavaBean for use in a
+    JSP. Write Java application to access JavaBeans Properties.
+                OR
+   Design application using Struts2. Application must accept user name and greet user when command button is pressed.
+
+8. Write Java application to encoding and decoding JSON in Java.

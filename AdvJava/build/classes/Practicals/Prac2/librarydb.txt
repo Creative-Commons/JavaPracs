@@ -1,0 +1,43 @@
+drop database library;
+create database library;
+use library;
+
+create table book(
+	book_id int primary key,
+	title varchar(40),
+	authors varchar(40),
+	price numeric(20,2),
+	genre varchar(40));
+
+create table member(
+	registration_id int primary key,
+	name varchar(40),
+	contact numeric(10),
+	email varchar(40));
+
+create table library_staff(
+	staff_id int primary key,
+	name varchar(40),
+	contact numeric(10),
+	email varchar(40));
+
+create table book_issue_record(
+	book_id int,
+	member_id int,
+	tstamp timestamp default now(),
+foreign key(member_id) references member(registration_id),
+	foreign key(book_id) references book(book_id));
+
+alter table member
+add column photo blob;
+
+alter table library_staff
+add column photo blob;
+
+desc book;
+desc member;
+desc library_staff;
+desc book_issue_record;
+
+insert into member values
+	(1, "kp", 9898989898, "kj@hj.noi", "C:\Users\Student\Desktop");
